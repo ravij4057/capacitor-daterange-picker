@@ -2,6 +2,14 @@
 
 A professional Capacitor plugin wrapper for the popular DateRangePicker.com library, providing a highly customizable date range selection UI for Web, Android, and iOS.
 
+
+## Features
+- ✅ Predefined Ranges (Today, Yesterday, Last 30 Days, etc.)
+- ✅ Custom Date Selection
+- ✅ Fully Configurable UI (Colors, Opens, Drops)
+- ✅ Support for Angular (NgModule & Standalone)
+- ✅ Lightweight & Optimized for Capacitor 6+
+
 ## Install
 
 ```bash
