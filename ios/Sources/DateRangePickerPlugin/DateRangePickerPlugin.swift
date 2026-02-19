@@ -1,10 +1,8 @@
 import Foundation
 import Capacitor
 
-/**
- * Please read the Capacitor iOS Plugin Development Guide
- * here: https://capacitorjs.com/docs/plugins/ios
- */
+// Sab kuch comment kar dein taaki Native registration khatam ho jaye
+/*
 @objc(DateRangePickerPlugin)
 public class DateRangePickerPlugin: CAPPlugin, CAPBridgedPlugin {
     public let identifier = "DateRangePickerPlugin"
@@ -21,3 +19,4 @@ public class DateRangePickerPlugin: CAPPlugin, CAPBridgedPlugin {
         ])
     }
 }
+*/

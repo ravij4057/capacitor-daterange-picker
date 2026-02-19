@@ -6,17 +6,17 @@ import com.getcapacitor.PluginCall;
 import com.getcapacitor.PluginMethod;
 import com.getcapacitor.annotation.CapacitorPlugin;
 
-@CapacitorPlugin(name = "DateRangePicker")
-public class DateRangePickerPlugin extends Plugin {
+// @CapacitorPlugin(name = "DateRangePicker")
+// public class DateRangePickerPlugin extends Plugin {
 
-    private DateRangePicker implementation = new DateRangePicker();
+//     private DateRangePicker implementation = new DateRangePicker();
 
-    @PluginMethod
-    public void echo(PluginCall call) {
-        String value = call.getString("value");
+//     @PluginMethod
+//     public void echo(PluginCall call) {
+//         String value = call.getString("value");
 
-        JSObject ret = new JSObject();
-        ret.put("value", implementation.echo(value));
-        call.resolve(ret);
-    }
-}
+//         JSObject ret = new JSObject();
+//         ret.put("value", implementation.echo(value));
+//         call.resolve(ret);
+//     }
+// }
