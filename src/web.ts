@@ -33,12 +33,22 @@ export class DateRangePickerWeb extends WebPlugin implements DateRangePickerPlug
       // Create hidden input
       const $input = $('<input type="text" style="display:none" />').appendTo('body');
 
+      $input.on('show.daterangepicker', () => {
+        $('body').addClass('daterangepicker-open'); // Backdrop trigger karne ke liye
+      });
+      
+      $input.on('hide.daterangepicker', () => {
+        $('body').removeClass('daterangepicker-open');
+      });
+
       // Initialize daterangepicker
       ($input as any).daterangepicker({
         startDate: options.startDate || moment(),
         endDate: options.endDate || moment(),
         opens: options.opens || 'center',
         drops: options.drops || 'down',
+        alwaysShowCalendars: true,
+        autoApply: true, 
         ranges: {
            'Today': [moment(), moment()],
            'Yesterday': [moment().subtract(1, 'days'), moment().subtract(1, 'days')],
