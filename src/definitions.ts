@@ -6,8 +6,9 @@ export interface DateRangeResult {
 
 
 export interface DateRangePickerPlugin {
-  // echo(options: { value: string }): Promise<{ value: string }>;
-
+  /**
+   * Open the DateRange Picker UI
+   */
   open(options?: {
     startDate?: string;
     endDate?: string;
