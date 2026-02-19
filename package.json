@@ -65,7 +65,14 @@
   "eslintConfig": {
     "extends": "@ionic/eslint-config/recommended"
   },
-
+  "capacitor": {
+    "ios": {
+      "src": "ios"
+    },
+    "android": {
+      "src": "android"
+    }
+  },
   "dependencies": {
     "daterangepicker": "^3.1.0",
     "jquery": "^4.0.0",
